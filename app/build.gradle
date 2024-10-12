@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.sensorx'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.sensorx"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "API_KEY", "\"urrnjnzahh7otrhn8v6ah4nqkz41x8y1fa7w7g39nagon4z5tedopa52ti8tlhhn2tzeibizhqbuglbpumt617e3am4t65evtgy5m5kr47710yzch9lkjbtr88xeyxmn75u66zt1i39kl6ztxhe1o1yadzm0i6t6s3e6lfstgi99orogytk8x76z1paiyp3mmau49qd4uwp068ep925zomo4rtpl5x4ubex389jamnoa9fbgwo1lwfnfcr1u5c5q\""
+            buildConfigField "String", "URL", "\"https://sensorapp.onrender.com\""
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_KEY", "\"urrnjnzahh7otrhn8v6ah4nqkz41x8y1fa7w7g39nagon4z5tedopa52ti8tlhhn2tzeibizhqbuglbpumt617e3am4t65evtgy5m5kr47710yzch9lkjbtr88xeyxmn75u66zt1i39kl6ztxhe1o1yadzm0i6t6s3e6lfstgi99orogytk8x76z1paiyp3mmau49qd4uwp068ep925zomo4rtpl5x4ubex389jamnoa9fbgwo1lwfnfcr1u5c5q\""
+            buildConfigField "String", "URL", "\"https://sensorapp.onrender.com\""
+
+        }
+    }
+    buildFeatures {
+        buildConfig = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
