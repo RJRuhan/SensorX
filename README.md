@@ -25,3 +25,8 @@ an Android app for recording accelerometer,gyroscope and other sensor readings t
 3. Build and run the project either in emulator or an Android device
 
 ## **Screenshots**
+
+| Home Screen        | Recording Activity        |
+|--------------------|---------------------------|
+| ![Home Screen](Screenshots/ss_1.jpg) | ![Recording Activity](Screenshots/ss_2.jpg) |
+
